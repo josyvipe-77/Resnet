@@ -1,0 +1,70 @@
+{
+  "metrics": {
+    "strategy": "scratch",
+    "seed": 2,
+    "best_epoch": 7,
+    "test_images": 432,
+    "test_accuracy": 0.9143518518518519,
+    "test_precision_macro": 0.9088172578462167,
+    "test_recall_macro": 0.9033333333333333,
+    "test_f1_macro": 0.9027997683658061
+  },
+  "classification_report": {
+    "Tizón temprano": {
+      "precision": 0.868995633187773,
+      "recall": 0.995,
+      "f1-score": 0.9277389277389277,
+      "support": 200.0
+    },
+    "Tizón tardío": {
+      "precision": 0.9824561403508771,
+      "recall": 0.84,
+      "f1-score": 0.9056603773584906,
+      "support": 200.0
+    },
+    "Sana": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 32.0
+    },
+    "accuracy": 0.9143518518518519,
+    "macro avg": {
+      "precision": 0.9088172578462167,
+      "recall": 0.9033333333333333,
+      "f1-score": 0.9027997683658061,
+      "support": 432.0
+    },
+    "weighted avg": {
+      "precision": 0.9219684136753009,
+      "recall": 0.9143518518518519,
+      "f1-score": 0.913610789396953,
+      "support": 432.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      199,
+      1,
+      0
+    ],
+    [
+      28,
+      168,
+      4
+    ],
+    [
+      2,
+      2,
+      28
+    ]
+  ],
+  "classes": [
+    "Tizón temprano",
+    "Tizón tardío",
+    "Sana"
+  ],
+  "split_sha256": "ea3b23bed644adb07948ca379a7cef94522f99b194c4ee48878bde02275c261c",
+  "checkpoint_sha256": "ca5763c52da49134ff7ee116c10f4189cd5ce8b56fbfea23319feba6c7deb1e4",
+  "inference_amp": true
+}

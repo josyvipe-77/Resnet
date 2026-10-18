@@ -1,0 +1,4 @@
+class,precision,recall,f1,support
+Tizón temprano,1.0,1.0,1.0,200
+Tizón tardío,1.0,0.98,0.98989898989899,200
+Sana,0.8888888888888888,1.0,0.9411764705882353,32
