@@ -1,0 +1,40 @@
+{
+  "strategies": [
+    "scratch",
+    "feature_extraction",
+    "finetune"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "max_epochs": 20,
+  "patience": 5,
+  "batch_size": 16,
+  "amp": true,
+  "strategy": "feature_extraction",
+  "seed": 1,
+  "classes": {
+    "Potato___Early_blight": 0,
+    "Potato___Late_blight": 1,
+    "Potato___healthy": 2
+  },
+  "class_weights": [
+    0.7155555486679077,
+    0.7155555486679077,
+    4.878787994384766
+  ],
+  "optimizer": "Adam",
+  "learning_rates": [
+    0.001
+  ],
+  "weight_decay": 0.0001,
+  "train_transform": "Compose(\n    RandomResizedCrop(size=(224, 224), scale=(0.8, 1.0), ratio=(0.75, 1.3333), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomRotation(degrees=[-15.0, 15.0], interpolation=bilinear, expand=False, fill=0)\n    ColorJitter(brightness=(0.9, 1.1), contrast=(0.9, 1.1), saturation=(0.9, 1.1), hue=None)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+  "eval_transform": "Compose(\n    Resize(size=256, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+  "split_sha256": "ea3b23bed644adb07948ca379a7cef94522f99b194c4ee48878bde02275c261c",
+  "torch_version": "2.8.0+cu128",
+  "torchvision_version": "0.23.0+cu128",
+  "device": "cuda",
+  "amp_enabled": true
+}

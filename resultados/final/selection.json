@@ -1,0 +1,8 @@
+{
+  "strategy": "finetune",
+  "seed": 0,
+  "criterion": "highest_mean_best_validation_f1_macro",
+  "mean_val_f1_macro": 0.9923615580565116,
+  "checkpoint": "checkpoints/final/finetune_seed0/best.pt",
+  "training_summary_sha256": "d91a450936374b945ae2efc2a28beb6d7278f590f3b1f6be09698985b9f40146"
+}

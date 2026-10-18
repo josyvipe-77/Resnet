@@ -1,0 +1,10 @@
+strategy,seed,epochs_completed,best_epoch,best_val_f1,duration_seconds,best_checkpoint
+scratch,0,14,9,0.9654948660119523,147.44023239999842,checkpoints\final\scratch_seed0\best.pt
+scratch,1,9,4,0.8925999520850069,93.04355919999944,checkpoints\final\scratch_seed1\best.pt
+scratch,2,12,7,0.9561664578111947,120.80238630000167,checkpoints\final\scratch_seed2\best.pt
+feature_extraction,0,15,10,0.9483839306867026,141.70633029999772,checkpoints\final\feature_extraction_seed0\best.pt
+feature_extraction,1,8,3,0.9276439507886923,73.13961230000132,checkpoints\final\feature_extraction_seed1\best.pt
+feature_extraction,2,9,4,0.940082639746791,82.20107149999603,checkpoints\final\feature_extraction_seed2\best.pt
+finetune,0,18,13,0.9983333229166016,179.49758199999633,checkpoints\final\finetune_seed0\best.pt
+finetune,1,12,7,0.9848736117392834,119.57140439999966,checkpoints\final\finetune_seed1\best.pt
+finetune,2,19,14,0.9938777395136498,191.2258180999961,checkpoints\final\finetune_seed2\best.pt
